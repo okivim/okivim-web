@@ -2,3 +2,39 @@
   transition: none;
 }
 
+.navbar__logo {
+  height: 1.5rem;
+  margin-right: 1.8rem;
+  margin-left: 3px;
+}
+
+.menu__link:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.menu__link--active,
+.menu__link--sublist {
+  background-color: transparent;
+  color: var(--ifm-link-color);
+}
+
+.menu__list-item-collapsible > .menu__link {
+  color: var(--ifm-menu-color);
+}
+
+.menu__list-item-collapsible:hover {
+  background-color: transparent;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  color: var(--ifm-link-color);
+}
+
+.footer--light {
+  --ifm-footer-background-color: #D6DAE3;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #1E1E2E;
+}
