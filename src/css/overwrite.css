@@ -47,3 +47,37 @@
 .footer--dark {
   --ifm-footer-background-color: #1E1E2E;
 }
+
+.footer__link-item {
+  color: #5E5E6E;
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: #AEAEBE;
+}
+
+.footer {
+  background-color: #D6DAE3;
+  color: #5E5E6E;
+}
+
+[data-theme='dark'] .footer {
+  background-color: #1E1E2E;
+  color: #AEAEBE;
+}
+
+.footer .footer__title {
+  color: #080911;
+}
+
+[data-theme='dark'] .footer .footer__title {
+  color: #e2e6ef;
+}
+
+.footer a:hover {
+  color: var(--ifm-color-secondary);
+}
+
+[data-theme='dark'] .footer a:hover {
+  color: var(--ifm-color-secondary);
+}
