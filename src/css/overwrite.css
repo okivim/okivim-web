@@ -4,16 +4,46 @@
 
 body {
   color: var(--ifm-text-color);
+  font-family: 'Satoshi';
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--ifm-featured-text-color);
+  font-family: 'Ranade';
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 20px;
 }
 
 .navbar__logo {
   height: 1.5rem;
   margin-right: 1.8rem;
   margin-left: 3px;
+}
+
+.navbar__link--active {
+  color: var(--ifm-navbar-link-active);
 }
 
 .menu__link > span {
