@@ -1,3 +1,5 @@
 # Guides and recipes
 
-Coming soon
+:::info
+This page will be updated very soon.
+:::
