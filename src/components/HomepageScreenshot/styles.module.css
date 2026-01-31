@@ -1,12 +1,42 @@
 .screenshotWrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.screenshotWrapperNavbar {
+  width: 100%;
+  max-width: 1170px;
+  height: 40px;
+  background-color: var(--ifm-color-emphasis-300);
+  border-radius: 12px 12px 0 0;
+  padding: 12px 14px;
+}
+
+.cBtn {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.redBtn {
+  background-color: #FF5F57;
+}
+
+.yellowBtn {
+  background-color: #FEBC2E;
+}
+
+.greenBtn {
+  background-color: #28C840;
 }
 
 .screenshot {
   width: 100%;
   max-width: 1170px;
   border: 6px solid var(--ifm-color-emphasis-300);
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
 }
