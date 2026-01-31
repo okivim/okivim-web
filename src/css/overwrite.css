@@ -46,19 +46,20 @@ h6 {
   color: var(--ifm-navbar-link-active);
 }
 
-.menu__link > span {
+.menu__link > span,
+.menu__link--sublist > span {
   overflow: visible;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.menu__link--sublist:hover {
   background-color: transparent;
-  color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary) !important;
 }
 
-.menu__link--active,
-.menu__link--sublist {
+.menu__link--active {
   background-color: transparent;
-  color: var(--ifm-link-color);
+  color: var(--ifm-color-secondary);
 }
 
 .menu__list-item-collapsible > .menu__link {

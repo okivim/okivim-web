@@ -3,10 +3,10 @@
 
 :root {
   --ifm-text-color: #384250;
-  --ifm-menu-color: #384250;
+  --ifm-menu-color: #182230;
   --ifm-menu-color-background-hover: transparent;
   --ifm-navbar-link-color: #384250;
-  --ifm-navbar-link-active: #3B73E0;
+  --ifm-navbar-link-active: #586270;
   --ifm-featured-text-color: #182230;
   --ifm-background-color: #e2e6ef;
   --ifm-navbar-background-color: #D6DAE3;
@@ -15,14 +15,14 @@
   --ifm-footer-text-color: #384250;
   --ifm-toc-border-color: #D6DAE3;
   --ifm-color-content-secondary: #384250;
-  --ifm-color-primary: #3B73E0;
-  --ifm-color-primary-dark: #3467CC;
-  --ifm-color-primary-darker: #2F5FBF;
-  --ifm-color-primary-darkest: #244A96;
+  --ifm-color-primary: #2B63D0;
+  --ifm-color-primary-dark: #2457BC;
+  --ifm-color-primary-darker: #1F4FAF;
+  --ifm-color-primary-darkest: #143A86;
   --ifm-color-primary-light: #5289F2;
   --ifm-color-primary-lighter: #6A9BF6;
   --ifm-color-primary-lightest: #9DBCFB;
-  --ifm-color-secondary: #0EAB9F;
+  --ifm-color-secondary: #0E9B8F;
   --ifm-card-background-color: #dadee7;
   --ifm-color-emphasis-200: #c7cbd4;
   --ifm-heading-margin-bottom: 0.5rem;
@@ -32,10 +32,10 @@
 
 [data-theme='dark'] {
   --ifm-text-color: #8892b0;
-  --ifm-menu-color: #8892b0;
+  --ifm-menu-color: #d8e2f0;
   --ifm-menu-color-background-hover: transparent;
   --ifm-navbar-link-color: #8892b0;
-  --ifm-navbar-link-active: #5A92F5;
+  --ifm-navbar-link-active: #687290;
   --ifm-featured-text-color: #d8e2f0;
   --ifm-background-color: #080911;
   --ifm-navbar-background-color: #1E1E2E;
@@ -44,10 +44,10 @@
   --ifm-footer-text-color: #8892b0;
   --ifm-toc-border-color: #1E1E2E;
   --ifm-color-content-secondary: #8892b0;
-  --ifm-color-primary: #5A92F5;
-  --ifm-color-primary-dark: #4A82EB;
-  --ifm-color-primary-darker: #427AE0;
-  --ifm-color-primary-darkest: #3562B8;
+  --ifm-color-primary: #6AA0F7;
+  --ifm-color-primary-dark: #5A90ED;
+  --ifm-color-primary-darker: #5288E3;
+  --ifm-color-primary-darkest: #4470C0;
   --ifm-color-primary-light: #6398F6;
   --ifm-color-primary-lighter: #7AA9F9;
   --ifm-color-primary-lightest: #A9C6FD;
