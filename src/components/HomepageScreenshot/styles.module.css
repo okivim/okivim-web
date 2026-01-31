@@ -1,0 +1,12 @@
+.screenshotWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.screenshot {
+  width: 100%;
+  max-width: 1170px;
+  border: 6px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+}

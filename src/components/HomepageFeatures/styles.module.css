@@ -1,8 +1,15 @@
+.featuresWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .features {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  padding: 6rem 0 10rem 0;
 }
 
 .homeCard {
