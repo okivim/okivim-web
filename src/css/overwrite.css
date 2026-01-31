@@ -51,6 +51,23 @@ h6 {
   color: var(--ifm-text-color);
 }
 
+.hero .button {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary-darkest) 100%);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.hero .button svg {
+  margin-left: 8px;
+  position: relative;
+  top: 1px;
+}
+
 .hero__title {
   font-size: 60px;
   letter-spacing: -0.05em;
@@ -62,6 +79,10 @@ h6 {
   animation: gradient-flow 4s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hero__subtitle {
+  font-size: 18px;
 }
 
 .menu__link > span,
