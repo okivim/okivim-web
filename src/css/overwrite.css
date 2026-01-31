@@ -46,6 +46,24 @@ h6 {
   color: var(--ifm-navbar-link-active);
 }
 
+.hero {
+  background-color: transparent;
+  color: var(--ifm-text-color);
+}
+
+.hero__title {
+  font-size: 60px;
+  letter-spacing: -0.05em;
+  background: linear-gradient(90deg, #3B73E0, #3EDBCF, #3B73E0);
+  background-size: 200% auto;
+  background-clip: text;
+  color: #3B73E0;
+  display: inline-block;
+  animation: gradient-flow 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .menu__link > span,
 .menu__link--sublist > span {
   overflow: visible;
@@ -127,4 +145,13 @@ h6 {
 
 [data-theme='dark'] .footer a:hover {
   color: var(--ifm-color-secondary);
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }

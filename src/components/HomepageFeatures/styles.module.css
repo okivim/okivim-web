@@ -6,8 +6,6 @@
 }
 
 .homeCard {
-  /* --ifm-card-background-color: #0C0E18;
-  --ifm-color-emphasis-200: #1E1E2E; */
   background-color: var(--ifm-card-background-color);
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 14px;
