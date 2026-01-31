@@ -20,9 +20,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="/docs/getting-started"
           >
-            Docs
+            Getting started
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

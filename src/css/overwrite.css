@@ -60,6 +60,15 @@ h6 {
   align-items: center;
   font-size: 16px;
   padding: 12px 24px;
+  position: relative;
+  bottom: 0;
+  transition: all 0.1s !important;
+}
+
+.hero .button:hover {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary-darkest) 100%);
+  box-shadow: 0 4px 12px rgba(80, 120, 220, 0.5);
+  bottom: 3px;
 }
 
 .hero .button svg {
