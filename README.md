@@ -1,6 +1,6 @@
 # okivim
 
-**[okivim](https://okivim-web.vercel.app/)** is a modern, simple, and efficient **Neovim** distribution built on top of **lazy.nvim**.  
+**[Okivim](https://okivim-web.vercel.app/)** is a modern, simple, and efficient **Neovim** distribution built on top of **lazy.nvim**.  
 It is designed to provide an out-of-the-box experience while keeping the configuration clean, modular, and easy to extend.
 
 ## 📖 Documentation
