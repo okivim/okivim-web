@@ -10,9 +10,11 @@
   --ifm-featured-text-color: #182230;
   --ifm-background-color: #e2e6ef;
   --ifm-navbar-background-color: #D6DAE3;
+  --ifm-breadcrumb-color-active: #384250;
   --ifm-footer-background-color: #D6DAE3;
   --ifm-footer-text-color: #384250;
   --ifm-toc-border-color: #D6DAE3;
+  --ifm-color-content-secondary: #384250;
   --ifm-color-primary: #3B73E0;
   --ifm-color-primary-dark: #3467CC;
   --ifm-color-primary-darker: #2F5FBF;
@@ -37,9 +39,11 @@
   --ifm-featured-text-color: #d8e2f0;
   --ifm-background-color: #080911;
   --ifm-navbar-background-color: #1E1E2E;
+  --ifm-breadcrumb-color-active: #8892b0;
   --ifm-footer-background-color: #1E1E2E;
   --ifm-footer-text-color: #8892b0;
   --ifm-toc-border-color: #1E1E2E;
+  --ifm-color-content-secondary: #8892b0;
   --ifm-color-primary: #5A92F5;
   --ifm-color-primary-dark: #4A82EB;
   --ifm-color-primary-darker: #427AE0;
