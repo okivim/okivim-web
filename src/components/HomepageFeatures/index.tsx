@@ -21,8 +21,8 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: "Carefully Plugins",
-    Svg: require("@site/static/img/boxes.svg").default,
+    title: "Handpicked Plugins",
+    Svg: require("@site/static/img/puzzle.svg").default,
     description: (
       <>
         Each plugin is thoughtfully selected to provide real value without

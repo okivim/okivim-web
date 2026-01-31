@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Okivim",
-  tagline: "Minimal, elegant and efficient Neovim configuration",
+  tagline: "Minimal, elegant and efficient Neovim configuration.",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
