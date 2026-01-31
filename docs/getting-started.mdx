@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Getting started
 
 ## Features
@@ -66,20 +69,27 @@ npm install -g typescript typescript-language-server
 
 Used by Telescope for project-wide text search.
 
-**Linux**
-``` bash
-sudo apt install ripgrep
-```
-**macOS**
-``` bash
-brew install ripgrep
-```
-**Windows**
-``` bash
-scoop install ripgrep
-or
-choco install ripgrep
-```
+<Tabs groupId="ripgrep-os">
+  <TabItem value="lin" label="Linux">
+    ``` bash
+    sudo apt install ripgrep
+    ```
+  </TabItem>
+  <TabItem value="mac" label="macOS">
+    ``` bash
+    brew install ripgrep
+    ```
+  </TabItem>
+  <TabItem value="win" label="Windows">
+    ``` bash
+    scoop install ripgrep
+    ```
+    or
+    ``` bash
+    choco install ripgrep
+    ```
+  </TabItem>
+</Tabs>
 
 ---
 
@@ -87,80 +97,98 @@ choco install ripgrep
 
 Used by Telescope for fast file search.
 
-**Linux**
-``` bash
-sudo apt install fd-find
-```
-**macOS**
-``` bash
-brew install fd
-```
-*If you want create a symlink (Optional)*
+<Tabs groupId="fd-os">
+  <TabItem value="lin" label="Linux">
+    ``` bash
+    sudo apt install fd-find
+    ```
+    *If you want create a symlink (Optional)*
 
-``` bash
-ln -s $(which fdfind) ~/.local/bin/fd
-```
-**Windows**
-``` bash
-scoop install fd
-or
-choco install fd
-```
+    ``` bash
+    ln -s $(which fdfind) ~/.local/bin/fd
+    ```
+  </TabItem>
+  <TabItem value="mac" label="macOS">
+    ``` bash
+    brew install fd
+    ```
+    *If you want create a symlink (Optional)*
+
+    ``` bash
+    ln -s $(which fdfind) ~/.local/bin/fd
+    ```
+  </TabItem>
+  <TabItem value="win" label="Windows">
+    ``` bash
+    scoop install fd
+    ```
+    or
+    ``` bash
+    choco install fd
+    ```
+  </TabItem>
+</Tabs>
 
 ---
 
 #### 6. nvim-treesitter (dependencies)
 
-**1- Required nvim-treesitter-cli:**
+##### 1- Required nvim-treesitter-cli:
 
-With npm
-``` bash
-npm install -g tree-sitter-cli
-```
-With cargo
-``` bash
-cargo install --locked tree-sitter-cli
-```
+<Tabs groupId="tree-sitter-cli-pm">
+  <TabItem value="npm" label="npm">
+    ``` bash
+    npm install -g tree-sitter-cli
+    ```
+    *And after check it*
+    ``` bash
+    tree-sitter --version
+    ```
+  </TabItem>
+  <TabItem value="cargo" label="cargo">
+    ``` bash
+    cargo install --locked tree-sitter-cli
+    ```
+    *And after check it*
+    ``` bash
+    tree-sitter --version
+    ```
+  </TabItem>
+</Tabs>
 
-*And after check it*
-``` bash
-tree-sitter --version
-```
+##### 2- Required a C compiler:
 
-...
-
-**2- Required a C compiler:**
-
-**Install on Linux / macOS**
-
-Ubuntu / Debian
-``` bash
-sudo apt install build-essential
-```
-Arch
-``` bash
-sudo pacman -S base-devel
-```
-Fedora
-``` bash
-sudo dnf groupinstall "Development Tools"
-```
-
-macOS
-``` bash
-xcode-select --install
-```
-
-**Install on Windows**
-
-By download link (✔ Select Desktop development with C++)
-``` bash
-https://visualstudio.microsoft.com/es/downloads/
-```
-Git Bash / MSYS2 / WSL
-``` bash
-sudo dnf groupinstall "Development Tools"
-```
+<Tabs groupId="c-compiler-os">
+  <TabItem value="lin" label="Linux">
+    Ubuntu / Debian
+    ``` bash
+    sudo apt install build-essential
+    ```
+    Arch
+    ``` bash
+    sudo pacman -S base-devel
+    ```
+    Fedora
+    ``` bash
+    sudo dnf groupinstall "Development Tools"
+    ```
+  </TabItem>
+  <TabItem value="mac" label="macOS">
+    ``` bash
+    xcode-select --install
+    ```
+  </TabItem>
+  <TabItem value="win" label="Windows">
+    By download link (✔ Select Desktop development with C++)
+    ``` bash
+    https://visualstudio.microsoft.com/es/downloads/
+    ```
+    Git Bash / MSYS2 / WSL
+    ``` bash
+    sudo dnf groupinstall "Development Tools"
+    ```
+  </TabItem>
+</Tabs>
 
 Final check if tree-sitter-cli and C compiler is installed
 ``` bash
