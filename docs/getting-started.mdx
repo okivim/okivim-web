@@ -102,21 +102,25 @@ Used by Telescope for fast file search.
     ``` bash
     sudo apt install fd-find
     ```
+    :::info
     *If you want create a symlink (Optional)*
 
     ``` bash
     ln -s $(which fdfind) ~/.local/bin/fd
     ```
+    :::
   </TabItem>
   <TabItem value="mac" label="macOS">
     ``` bash
     brew install fd
     ```
+    :::info
     *If you want create a symlink (Optional)*
 
     ``` bash
     ln -s $(which fdfind) ~/.local/bin/fd
     ```
+    :::
   </TabItem>
   <TabItem value="win" label="Windows">
     ``` bash
@@ -190,6 +194,7 @@ Used by Telescope for fast file search.
   </TabItem>
 </Tabs>
 
+:::info
 Final check if tree-sitter-cli and C compiler is installed
 ``` bash
 cc --version
@@ -197,6 +202,7 @@ cc --version
 ``` bash
 tree-sitter --version
 ```
+:::
 
 ---
 
@@ -206,6 +212,7 @@ Neovim requires an external tool to integrate with the system clipboard.
 
 ##### Linux:
 
+:::info
 First, check which display server you are using:
 
 ```bash
@@ -214,13 +221,17 @@ echo $XDG_SESSION_TYPE
 
 - If it returns `wayland` - you are using Wayland
 - If it returns `x11` - you are using X11
+:::
 
-**For Wayland (wl-clipboard)**
-```bash
-sudo apt install wl-clipboard
-```
-
-**Fow X11 (xclip)**
-```bash
-sudo apt install xclip
-```
+<Tabs groupId="tree-sitter-cli-pm">
+  <TabItem value="wayland" label="Wayland (wl-clipboard)">
+    ```bash
+    sudo apt install wl-clipboard
+    ```
+  </TabItem>
+  <TabItem value="x11" label="X11 (xclip)">
+    ```bash
+    sudo apt install xclip
+    ```
+  </TabItem>
+</Tabs>
