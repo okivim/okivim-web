@@ -1,5 +1,24 @@
 # Structure
 
-:::info
-This page will be updated very soon.
-:::
+```md
+init.lua
+lazy-lock.json
+README.md
+LICENSE
+lua
+└── okivim
+   ├── color-scheme-manager
+   │  └── init.lua
+   ├── config
+   │  ├── autocmds.lua
+   │  ├── globals.lua
+   │  ├── init.lua
+   │  ├── keymaps.lua
+   │  └── options.lua
+   ├── lsp
+   │  ├── servers
+   │  │  └── *.lua # servers list
+   │  └── init.lua
+   └── plugins
+      └── *.lua # plugins list
+```
