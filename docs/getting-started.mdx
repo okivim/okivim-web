@@ -210,28 +210,101 @@ tree-sitter --version
 
 Neovim requires an external tool to integrate with the system clipboard.
 
-##### Linux:
+<Tabs groupId="clipboard-os">
+  <TabItem value="lin" label="Linux">
+    :::info
+    First, check which display server you are using:
 
-:::info
-First, check which display server you are using:
-
-```bash
-echo $XDG_SESSION_TYPE
-```
-
-- If it returns `wayland` - you are using Wayland
-- If it returns `x11` - you are using X11
-:::
-
-<Tabs groupId="tree-sitter-cli-pm">
-  <TabItem value="wayland" label="Wayland (wl-clipboard)">
     ```bash
-    sudo apt install wl-clipboard
+    echo $XDG_SESSION_TYPE
+    ```
+
+    - If it returns `wayland` - you are using Wayland
+    - If it returns `x11` - you are using X11
+    :::
+
+    <Tabs groupId="clipboard-linux">
+      <TabItem value="wayland" label="Wayland (wl-clipboard)">
+        ```bash
+        sudo apt install wl-clipboard
+        ```
+      </TabItem>
+      <TabItem value="x11" label="X11 (xclip)">
+        ```bash
+        sudo apt install xclip
+        ```
+      </TabItem>
+    </Tabs>
+  </TabItem>
+  <TabItem value="mac" label="macOS">
+    On macOS, Neovim uses the system clipboard through the built-in `pbcopy` and `pbpaste` utilities.
+
+    :::info
+    No additional configuration is required as long as Neovim is installed with clipboard support.
+    :::
+
+    To verify clipboard support:
+
+    ```bash
+    nvim --version | grep clipboard
+    ```
+
+    If you see `+clipboard`, Neovim is correctly configured.
+
+    If Neovim was installed via Homebrew, clipboard support is enabled by default:
+
+    ```bash
+    brew install neovim
     ```
   </TabItem>
-  <TabItem value="x11" label="X11 (xclip)">
-    ```bash
-    sudo apt install xclip
-    ```
+  <TabItem value="win" label="Windows">
+    On Windows, Neovim integrates with the system clipboard using external clipboard helpers.
+
+    <Tabs groupId="clipboard-windows">
+      <TabItem value="native" label="Windows (Native)">
+        Neovim uses `win32yank.exe`, which is included by default in official Neovim releases.
+
+        :::info
+        No extra setup is needed if you installed Neovim from the official installer or via winget.
+        :::
+
+        Verify clipboard support:
+
+        ```powershell
+        nvim --version | findstr clipboard
+        ```
+      </TabItem>
+
+      <TabItem value="wsl" label="WSL">
+        If you are using Neovim inside WSL, clipboard integration requires an additional tool.
+
+        Install `win32yank.exe` and make sure it is available in your `$PATH`.
+
+        Example (from inside WSL):
+
+        ```bash
+        sudo apt install wget unzip
+        wget https://github.com/equalsraf/win32yank/releases/latest/download/win32yank-x64.zip
+        unzip win32yank-x64.zip
+        sudo mv win32yank.exe /usr/local/bin/
+        ```
+
+        If needed, add the following to your Neovim configuration:
+
+        ```lua
+        vim.g.clipboard = {
+          name = "win32yank",
+          copy = {
+            ["+"] = "win32yank.exe -i --crlf",
+            ["*"] = "win32yank.exe -i --crlf",
+          },
+          paste = {
+            ["+"] = "win32yank.exe -o --lf",
+            ["*"] = "win32yank.exe -o --lf",
+          },
+        }
+        ```
+      </TabItem>
+    </Tabs>
   </TabItem>
 </Tabs>
