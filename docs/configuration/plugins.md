@@ -73,8 +73,8 @@
 - [which-key.nvim](https://github.com/folke/which-key.nvim)  
   Displays available keybindings in a popup as you type.
 
-- [mini.starter](https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-starter.md)  
-  Minimal and configurable start screen for Neovim.
+- [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)  
+  Fancy and Blazing Fast start screen plugin of neovim.
 
 ### Edition
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim)  
