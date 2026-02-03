@@ -4,7 +4,7 @@
 
 body {
   color: var(--ifm-text-color);
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Inter', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {

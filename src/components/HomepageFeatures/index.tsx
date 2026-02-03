@@ -15,8 +15,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/zap.svg").default,
     description: (
       <>
-        Designed with performance in mind to deliver a fast, responsive, and
-        smooth Neovim experience across all workflows.
+        Designed with performance in mind to deliver a fast, responsive, smooth
+        Neovim experience across workflows.
       </>
     ),
   },
