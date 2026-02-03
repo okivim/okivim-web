@@ -13,6 +13,7 @@
 }
 
 .homeCard {
+  min-height: 240px;
   background-color: var(--ifm-card-background-color);
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 14px;

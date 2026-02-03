@@ -9,57 +9,57 @@
   font-style: normal;
 }
 
-/* Satoshi Font */
+/* RobotoMono Font */
 @font-face {
-  font-family: 'Satoshi';
-  src: url('../../static/fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('../../static/fonts/Satoshi-Regular.woff') format('woff'),
-       url('../../static/fonts/Satoshi-Regular.ttf') format('truetype');
+  font-family: 'Roboto Mono';
+  src: url('../../static/fonts/RobotoMono-Regular.woff2') format('woff2'),
+       url('../../static/fonts/RobotoMono-Regular.woff') format('woff'),
+       url('../../static/fonts/RobotoMono-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('../../static/fonts/Satoshi-Italic.woff2') format('woff2'),
-       url('../../static/fonts/Satoshi-Italic.woff') format('woff'),
-       url('../../static/fonts/Satoshi-Italic.ttf') format('truetype');
+  font-family: 'Roboto Mono';
+  src: url('../../static/fonts/RobotoMono-Italic.woff2') format('woff2'),
+       url('../../static/fonts/RobotoMono-Italic.woff') format('woff'),
+       url('../../static/fonts/RobotoMono-Italic.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('../../static/fonts/Satoshi-Medium.woff2') format('woff2'),
-       url('../../static/fonts/Satoshi-Medium.woff') format('woff'),
-       url('../../static/fonts/Satoshi-Medium.ttf') format('truetype');
+  font-family: 'Roboto Mono';
+  src: url('../../static/fonts/RobotoMono-SemiBold.woff2') format('woff2'),
+       url('../../static/fonts/RobotoMono-SemiBold.woff') format('woff'),
+       url('../../static/fonts/RobotoMono-SemiBold.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('../../static/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
-       url('../../static/fonts/Satoshi-MediumItalic.woff') format('woff'),
-       url('../../static/fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  font-family: 'Roboto Mono';
+  src: url('../../static/fonts/RobotoMono-SemiBoldItalic.woff2') format('woff2'),
+       url('../../static/fonts/RobotoMono-SemiBoldItalic.woff') format('woff'),
+       url('../../static/fonts/RobotoMono-SemiBoldItalic.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('../../static/fonts/Satoshi-Bold.woff2') format('woff2'),
-       url('../../static/fonts/Satoshi-Bold.woff') format('woff'),
-       url('../../static/fonts/Satoshi-Bold.ttf') format('truetype');
+  font-family: 'Roboto Mono';
+  src: url('../../static/fonts/RobotoMono-Bold.woff2') format('woff2'),
+       url('../../static/fonts/RobotoMono-Bold.woff') format('woff'),
+       url('../../static/fonts/RobotoMono-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('../../static/fonts/Satoshi-BoldItalic.woff2') format('woff2'),
-       url('../../static/fonts/Satoshi-BoldItalic.woff') format('woff'),
-       url('../../static/fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  font-family: 'Roboto Mono';
+  src: url('../../static/fonts/RobotoMono-BoldItalic.woff2') format('woff2'),
+       url('../../static/fonts/RobotoMono-BoldItalic.woff') format('woff'),
+       url('../../static/fonts/RobotoMono-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
   font-style: italic;

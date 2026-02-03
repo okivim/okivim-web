@@ -4,7 +4,7 @@
 
 body {
   color: var(--ifm-text-color);
-  font-family: 'Satoshi';
+  font-family: 'Roboto Mono', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,19 +21,19 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
-}
-
-h4 {
   font-size: 22px;
 }
 
-h5 {
+h4 {
   font-size: 18px;
 }
 
-h6 {
+h5 {
   font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
 }
 
 .aa-DetachedSearchButton {
@@ -141,6 +141,10 @@ h6 {
   box-shadow: none;
 }
 
+.table-of-contents {
+  font-size: 1rem;
+}
+
 .pagination-nav__link {
   border: none;
   padding: 0;
@@ -148,6 +152,14 @@ h6 {
 
 .pagination-nav__link:hover {
   color: var(--ifm-color-secondary);
+}
+
+.alert--info {
+  background-color: #ccddee;
+}
+
+[data-theme='dark'] .alert--info {
+  background-color: #193C57;
 }
 
 @keyframes gradient-flow {

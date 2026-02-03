@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Designed with performance in mind to deliver a fast, responsive, and
-        smooth Neovim experience.
+        smooth Neovim experience across all workflows.
       </>
     ),
   },
