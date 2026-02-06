@@ -1,4 +1,4 @@
-# Keymaps Documentation
+# Keymaps
 
 This documentation contains all keymaps configured in the Neovim setup, organized by categories.
 
@@ -11,7 +11,6 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<Tab>` | Normal | Next buffer |
 | `<S-Tab>` | Normal | Previous buffer |
 | `<leader>bq` | Normal | Close other buffers |
-| `<leader>bl` | Normal | Buffer list |
 | `<leader>alb` | Normal | Insert empty line below |
 | `<leader>sl` | Normal | Select line *(no newline)* |
 | `<leader>yl` | Normal | Copy line *(no newline)* |
@@ -98,8 +97,8 @@ These keymaps are available in buffers with LSP enabled.
 
 | Keymap | Mode | Description |
 |-------|------|-------------|
-| `<leader>G` | Normal | Open Git status |
-| `<leader>Gb` | Normal | Open Git blame |
+| `<leader>G` | Normal | Open git status |
+| `<leader>Gb` | Normal | Open git blame |
 
 #### Inside `:Git` buffer
 
@@ -111,10 +110,9 @@ These keymaps are available in buffers with LSP enabled.
 | `cc` | Normal | Commit staged changes |
 | `ca` | Normal | Amend last commit |
 | `ce` | Normal | Extend last commit |
-| `dd` | Normal | Open diff for file under cursor |
-| `X`  | Normal | Discard changes in file |
+| `dd` | Normal | Discard changes in file |
 | `D` | Normal | Show full diff |
-| `q` | Normal | Close Git status buffer |
+| `q` | Normal | Close git status buffer |
 
 #### Inside `:Git blame` buffer
 
@@ -132,9 +130,9 @@ These keymaps are available in buffers with LSP enabled.
 
 | Keymap | Mode | Description |
 |--------|------|-------------|
-| `<leader>do` | Normal | Open Diffview |
+| `<leader>do` | Normal | Open panel |
 | `<leader>dH` | Normal | File history (current file) |
-| `<leader>dc` | Normal | Close Diffview |
+| `<leader>dc` | Normal | Close panel |
 
 ### Gitsigns
 
