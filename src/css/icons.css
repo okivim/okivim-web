@@ -1,0 +1,9 @@
+.icon {
+  width: 80px;
+  color: var(--ifm-menu-color);
+  margin: 1rem 1rem 0 0;
+}
+.icon * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}

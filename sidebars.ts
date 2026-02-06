@@ -27,8 +27,9 @@ const sidebars: SidebarsConfig = {
       items: [
         "configuration/keymaps",
         "configuration/plugins",
-        "configuration/guides-and-recipes",
+        "configuration/lsps",
         "configuration/structure",
+        "configuration/guides-and-recipes",
       ],
     },
   ],
