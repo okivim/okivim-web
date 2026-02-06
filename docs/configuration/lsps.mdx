@@ -20,6 +20,8 @@ import ReactIcon from '@site/static/img/icons/react-original.svg';
 import AstroIcon from '@site/static/img/icons/astro-plain.svg';
 import YamlIcon from '@site/static/img/icons/yaml-plain.svg';
 
+## LSP's
+
 <p className="icons-wrapper">
 <BashIcon className="icon" title="Bash" />
 <DockerIcon className="icon" title="Docker" />
@@ -78,3 +80,24 @@ A full list of available LSP servers can be found here:
 https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 
 By doing this, the LSP will be registered in the list of servers that are automatically installed and configured, making the setup fully reproducible across machines.
+
+## Debug adapters (DAP)
+
+- debugpy (Python)
+- codelldb (Rust / C / C++)
+- js-debug-adapter (JS / TS)
+- php-debug-adapter (PHP)
+
+:::info
+The Debug Adapter Protocol (DAP) configurations are defined in `lua/okivim/plugins/dap.lua`
+:::
+
+## Formatters
+
+- prettierd
+- stylelint
+- taplo
+
+:::info
+Formatter configurations are defined in `lua/okivim/plugins/conform.lua`
+:::
