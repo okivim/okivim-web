@@ -20,6 +20,7 @@ import ReactIcon from '@site/static/img/icons/react-original.svg';
 import AstroIcon from '@site/static/img/icons/astro-plain.svg';
 import YamlIcon from '@site/static/img/icons/yaml-plain.svg';
 
+<p className="icons-wrapper">
 <BashIcon className="icon" title="Bash" />
 <DockerIcon className="icon" title="Docker" />
 <CIcon className="icon" title="C" />
@@ -38,3 +39,42 @@ import YamlIcon from '@site/static/img/icons/yaml-plain.svg';
 <ReactIcon className="icon" title="React" />
 <AstroIcon className="icon" title="Astro" />
 <YamlIcon className="icon" title="Yaml" />
+</p>
+
+These LSPs, formatters, linters, and debug adapters are automatically installed and enabled. All of them are managed by Mason.
+
+There are two ways to add a new LSP:
+
+**1. Install it manually using Mason**  
+This is useful for quick testing, but the change will **not be persistent** if you move the configuration to another machine.
+
+**2. Register it in the configuration (recommended)**  
+Create a Lua file with the name of the server inside:
+
+E.g. `lua/okivim/lsp/servers/clangd.lua`
+
+and add the configuration as described in the official documentation.  
+
+```lua
+return function(capabilities)
+  vim.lsp.config("clangd", {
+    capabilities = capabilities,
+    cmd = {
+      "clangd",
+      "--background-index",
+      "--clang-tidy",
+      "--completion-style=detailed",
+      "--header-insertion=iwyu",
+    },
+  })
+end
+```
+
+:::info
+The configuration is designed so that LSPs are automatically detected and added to the auto-install list based on the server file name; therefore, the file name must match the LSP server name.
+:::
+
+A full list of available LSP servers can be found here:  
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
+
+By doing this, the LSP will be registered in the list of servers that are automatically installed and configured, making the setup fully reproducible across machines.
