@@ -14,7 +14,7 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<leader>alb` | Normal | Insert empty line below |
 | `<leader>sl` | Normal | Select line *(no newline)* |
 | `<leader>yl` | Normal | Copy line *(no newline)* |
-| `<leader>x` | Normal | Close buffer |
+| `<leader>bx` | Normal | Close buffer |
 | `<leader>a` | Normal | Select entire file |
 | `<leader>y` | Visual | Copy selection |
 | `<leader>yy` | Normal | Copy line |
@@ -193,6 +193,15 @@ These keymaps are available in buffers with LSP enabled.
 | `r` | Operator | Remote flash |
 | `R` | Operator/Visual | Treesitter search |
 | `<C-s>` | Command | Toggle flash search |
+
+### Trouble
+
+| Keymap | Mode | Description |
+|--------|------|-------------|
+| `<leader>xx` | Normal | Toggle diagnostics |
+| `<leader>xX` | Normal | Toggle buffer diagnostics |
+| `<leader>xq` | Normal | Toggle quickfix list |
+| `<leader>xl` | Normal | Toggle location list |
 
 ---
 
