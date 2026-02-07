@@ -65,6 +65,12 @@ These keymaps are available in buffers with LSP enabled.
 | `<leader>fc` | Normal | Find config files |
 | `<leader>ffh` | Normal | Find files + hidden |
 | `<leader>ffa` | Normal | Find all files |
+| `<leader>ld` | Normal | LSP definitions |
+| `<leader>lD` | Normal | LSP type definitions |
+| `<leader>li` | Normal | LSP implementations |
+| `<leader>lr` | Normal | LSP references |
+| `<leader>ls` | Normal | LSP document symbols |
+| `<leader>lS` | Normal | LSP workspace symbols |
 
 ### Yanky
 
