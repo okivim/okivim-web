@@ -153,12 +153,6 @@ These keymaps are available in buffers with LSP enabled.
 | `<leader>gn` | Normal | Toggle number highlighting for changes |
 | `<leader>gl` | Normal | Toggle line highlighting for changes |
 
-### Aerial
-
-| Keymap | Mode | Description |
-|--------|------|-------------|
-| `<leader>o` | Normal | Toggle Aerial Outline |
-
 ### Mynotes
 
 | Keymap | Mode | Description |
