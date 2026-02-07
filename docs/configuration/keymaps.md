@@ -200,8 +200,10 @@ These keymaps are available in buffers with LSP enabled.
 |--------|------|-------------|
 | `<leader>xx` | Normal | Toggle diagnostics |
 | `<leader>xX` | Normal | Toggle buffer diagnostics |
-| `<leader>xq` | Normal | Toggle quickfix list |
-| `<leader>xl` | Normal | Toggle location list |
+| `<leader>cs` | Normal | Toggle symbols |
+| `<leader>cl` | Normal | Toggle LSP list |
+| `<leader>xQ` | Normal | Toggle quickfix list |
+| `<leader>xL` | Normal | Toggle location list |
 
 ---
 
