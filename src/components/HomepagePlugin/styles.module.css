@@ -1,0 +1,26 @@
+.pluginWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pluginContent {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 6rem var(--ifm-spacing-horizontal) 10rem var(--ifm-spacing-horizontal);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.pluginInfo {
+  background-color: red;
+}
+
+.screenshot {
+  border: 2px solid blue;
+}
