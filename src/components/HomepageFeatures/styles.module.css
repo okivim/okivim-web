@@ -14,8 +14,8 @@
 
 .homeCard {
   min-height: 240px;
-  background-color: var(--ifm-card-background-color);
-  border: 1px solid var(--ifm-color-emphasis-200);
+  background-color: rgba(var(--ifm-card-background-color-rgb), 0.02);
+  border: 1px solid rgba(var(--ifm-card-background-color-rgb), 0.08);
   border-radius: 14px;
   margin-top: 1rem;
   padding-top: 14px;
