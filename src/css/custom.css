@@ -31,6 +31,7 @@
 
   --ifm-color-secondary: #0E7F8B;
   --ifm-card-background-color-rgb: 0, 0, 0;
+  --ifm-hr-background-color: rgba(0, 0, 0, 0.12);
   --ifm-color-emphasis-200: #c7cbd4;
   --ifm-color-emphasis-300: #b7bbc4;
 
@@ -71,6 +72,7 @@
 
   --ifm-color-secondary: #2ECBBF;
   --ifm-card-background-color-rgb: 255, 255, 255;
+  --ifm-hr-background-color: rgba(255, 255, 255, 0.12);
   --ifm-color-emphasis-200: #1E1E2E;
   --ifm-color-emphasis-300: #2E2E3E;
 

@@ -178,12 +178,30 @@ h6 {
   color: var(--ifm-color-secondary);
 }
 
+code,
+.prism-code {
+  background-color: #eaeef7 !important;
+}
+
+[data-theme='dark'] code,
+[data-theme='dark'] .prism-code {
+  background-color: #1e1f32 !important;
+}
+
 .alert--info {
   background-color: #ccddee;
 }
 
 [data-theme='dark'] .alert--info {
   background-color: #193C57;
+}
+
+.alert--success {
+  background-color: #d6e3df;
+}
+
+[data-theme='dark'] .alert--success {
+  background-color: #00241f;
 }
 
 @keyframes gradient-flow {
