@@ -38,4 +38,5 @@
 .screenshot {
   width: 100%;
   max-width: 1170px;
+  border-radius: 0 0 10px 10px;
 }
