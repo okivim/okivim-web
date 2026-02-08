@@ -12,9 +12,9 @@
   --ifm-background-color: #e2e6ef;
   --ifm-background-color-rgb: 226, 230, 239;
 
-  --ifm-navbar-background-color: #D6DAE3;
+  --ifm-navbar-background-color: rgba(214, 218, 227, 0.90);
   --ifm-breadcrumb-color-active: #384250;
-  --ifm-footer-background-color: #D6DAE3;
+  --ifm-footer-background-color: rgba(214, 218, 227, 0.90);
   --ifm-footer-text-color: #384250;
   --ifm-toc-border-color: #D6DAE3;
   --ifm-color-content-secondary: #384250;
@@ -34,6 +34,8 @@
   --ifm-color-emphasis-200: #c7cbd4;
   --ifm-color-emphasis-300: #b7bbc4;
 
+  --ifm-swiper-pagination-bullet-color: rgba(0, 0, 0, 0.6);
+
   --ifm-heading-margin-bottom: 0.5rem;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -50,9 +52,9 @@
   --ifm-background-color: #080911;
   --ifm-background-color-rgb: 8, 9, 17;
 
-  --ifm-navbar-background-color: #0C0E18;
+  --ifm-navbar-background-color: rgba(12, 14, 24, 0.90);
   --ifm-breadcrumb-color-active: #8892b0;
-  --ifm-footer-background-color: #0C0E18;
+  --ifm-footer-background-color: rgba(12, 14, 24, 0.90);
   --ifm-footer-text-color: #8892b0;
   --ifm-toc-border-color: #1E1E2E;
   --ifm-color-content-secondary: #8892b0;
@@ -71,6 +73,8 @@
   --ifm-card-background-color-rgb: 255, 255, 255;
   --ifm-color-emphasis-200: #1E1E2E;
   --ifm-color-emphasis-300: #2E2E3E;
+
+  --ifm-swiper-pagination-bullet-color: rgba(255, 255, 255, 0.6);
 
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

@@ -5,7 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import HomepageScreenshot from "@site/src/components/HomepageScreenshot";
-import HomepagePlugin from "@site/src/components/HomepagePlugin";
+import HomepageCarousel from "@site/src/components/HomepageCarousel";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -59,18 +59,8 @@ export default function Home(): ReactNode {
         <main>
           <HomepageScreenshot />
           <HomepageFeatures />
-          <HomepagePlugin
-            title="Mi plugin"
-            description="Una descripción bastante clara"
-            image="/img/plugin.png"
-            reverse={false}
-          />
-          <HomepagePlugin
-            title="Mi plugin"
-            description="Una descripción bastante clara"
-            image="/img/plugin.png"
-            reverse
-          />
+          <h2 className={styles.textCenter}>What can you do?</h2>
+          <HomepageCarousel />
         </main>
       </div>
     </Layout>

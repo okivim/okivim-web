@@ -1,39 +1,57 @@
-* {
-  transition: none !important;
-}
-
 body {
+  height: auto;
+  background:
+    radial-gradient(
+      circle at 50% 80px,
+      rgba(var(--ifm-color-primary-rgb), 0.16),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(var(--ifm-color-primary-rgb), 0.10),
+      transparent 60%
+    ),
+    var(--ifm-background-color);
   color: var(--ifm-text-color);
   font-family: 'Inter', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--ifm-featured-text-color);
-  font-family: 'Ranade';
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 34px;
+  font-size: 38px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 32px;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.swiper {
+  padding-bottom: 3.5rem !important;
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  background-color: var(--ifm-swiper-pagination-bullet-color) !important;
 }
 
 .aa-DetachedSearchButton {

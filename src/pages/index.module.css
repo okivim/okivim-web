@@ -3,26 +3,15 @@
  * and scoped locally.
  */
 
-.homeBackground {
-  background:
-    radial-gradient(
-      circle at 50% 30%,
-      rgba(var(--ifm-color-primary-rgb), 0.16),
-      transparent 55%
-    ),
-    radial-gradient(
-      circle at 80% 80%,
-      rgba(var(--ifm-color-primary-rgb), 0.12),
-      transparent 60%
-    ),
-    var(--ifm-background-color);
-}
-
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+h1:global(.hero__title) {
+  font-family: 'Ranade';
 }
 
 @media screen and (max-width: 996px) {
@@ -35,4 +24,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.textCenter {
+  text-align: center;
 }
