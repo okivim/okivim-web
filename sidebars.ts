@@ -28,6 +28,7 @@ const sidebars: SidebarsConfig = {
         "configuration/keymaps",
         "configuration/plugins",
         "configuration/lsps",
+        "configuration/treesitter",
         "configuration/structure",
         "configuration/guides-and-recipes",
       ],
