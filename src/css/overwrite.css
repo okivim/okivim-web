@@ -47,7 +47,13 @@ h6 {
 }
 
 .swiper {
-  padding-bottom: 3.5rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 6px !important;
 }
 
 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {

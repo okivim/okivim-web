@@ -32,9 +32,9 @@ function HomepageHeader() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="lucide lucide-arrow-right-icon lucide-arrow-right"
             >
               <path d="M5 12h14" />
@@ -59,7 +59,7 @@ export default function Home(): ReactNode {
         <main>
           <HomepageScreenshot />
           <HomepageFeatures />
-          <h2 className={styles.textCenter}>What can you do?</h2>
+          <h2 className={styles.textCenter}>Designed for your workflow</h2>
           <HomepageCarousel />
         </main>
       </div>
