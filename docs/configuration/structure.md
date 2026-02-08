@@ -5,6 +5,8 @@ init.lua
 lazy-lock.json
 README.md
 LICENSE
+ftplugin
+└── *.lua # treesitter languages
 lua
 └── okivim
    ├── color-scheme-manager
