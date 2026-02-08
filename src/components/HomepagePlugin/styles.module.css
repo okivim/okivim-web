@@ -7,20 +7,29 @@
 .pluginContent {
   width: 100%;
   max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 6rem var(--ifm-spacing-horizontal) 10rem var(--ifm-spacing-horizontal);
+  padding: 0;
 }
 
-.reverse {
-  flex-direction: row-reverse;
+.pluginItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.pluginItem > img {
+  width: 60%;
 }
 
 .pluginInfo {
-  background-color: red;
+  font-size: 18px;
+  padding-top: var(--ifm-spacing-horizontal);
+  padding-right: calc(var(--ifm-spacing-horizontal) * 2);
+  padding-bottom: var(--ifm-spacing-horizontal);
+  padding-left: calc(var(--ifm-spacing-horizontal) * 2);
 }
 
 .screenshot {
-  border: 2px solid blue;
+  border: 1px solid rgba(var(--ifm-card-background-color-rgb), 0.14);
+  border-radius: 10px;
 }
