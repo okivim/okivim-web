@@ -4,8 +4,6 @@ This configuration uses the new `nvim-treesitter` API, where syntax highlighting
 
 Treesitter is not started globally. Instead, it is explicitly activated when a buffer with a supported filetype is opened.
 
----
-
 ## Adding a new language (parser)
 
 To add support for a new Treesitter language parser:
@@ -32,8 +30,6 @@ To add support for a new Treesitter language parser:
 You can find the full list of officially supported Treesitter languages here:
 
 https://github.com/nvim-treesitter/nvim-treesitter/blob/main/SUPPORTED_LANGUAGES.md
-
----
 
 ## Enabling Treesitter for a filetype (ftplugin)
 
@@ -64,8 +60,6 @@ You can use any existing file in `ftplugin/` as a template.
 Simply duplicate it and rename the file to match the new filetype you want to support.
 :::
 
----
-
 ## Verifying the filetype
 
 To check which filetype Neovim is using for the current buffer, run:
@@ -75,8 +69,6 @@ To check which filetype Neovim is using for the current buffer, run:
 ```
 
 The returned value (for example, `typescriptreact`) must match the filename used in `ftplugin/`.
-
----
 
 ## Summary
 
