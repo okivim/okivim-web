@@ -3,6 +3,21 @@
  * and scoped locally.
  */
 
+.homeBackground {
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(var(--ifm-color-primary-rgb), 0.16),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(var(--ifm-color-primary-rgb), 0.12),
+      transparent 60%
+    ),
+    var(--ifm-background-color);
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;

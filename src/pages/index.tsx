@@ -5,6 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import HomepageScreenshot from "@site/src/components/HomepageScreenshot";
+import HomepagePlugin from "@site/src/components/HomepagePlugin";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -53,11 +54,25 @@ export default function Home(): ReactNode {
       title={siteConfig.title}
       description="Minimal, elegant and efficient Neovim configuration."
     >
-      <HomepageHeader />
-      <main>
-        <HomepageScreenshot />
-        <HomepageFeatures />
-      </main>
+      <div className={styles.homeBackground}>
+        <HomepageHeader />
+        <main>
+          <HomepageScreenshot />
+          <HomepageFeatures />
+          <HomepagePlugin
+            title="Mi plugin"
+            description="Una descripción bastante clara"
+            image="/img/plugin.png"
+            reverse={false}
+          />
+          <HomepagePlugin
+            title="Mi plugin"
+            description="Una descripción bastante clara"
+            image="/img/plugin.png"
+            reverse
+          />
+        </main>
+      </div>
     </Layout>
   );
 }
