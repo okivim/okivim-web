@@ -32,7 +32,13 @@ import TabItem from '@theme/TabItem';
 
 These tools must be installed for the setup to work properly.
 
-#### 1. Node.js
+#### Lazygit
+
+Lazygit is optional. Install it only if you want to use the terminal-based Git interface. See the installation instructions in the [Lazygit official repository](https://github.com/jesseduffield/lazygit)
+
+---
+
+#### Node.js
 
 Required for the TypeScript LSP.
 
@@ -45,7 +51,7 @@ fnm install --lts
 
 ---
 
-#### 2. Prettier
+#### Prettier
 
 Required for projects that use it.
 
@@ -55,7 +61,7 @@ npm install -g prettier
 
 ---
 
-#### 3. TypeScript
+#### TypeScript
 
 Required for TypeScript language server.
 
@@ -65,102 +71,23 @@ npm install -g typescript typescript-language-server
 
 ---
 
-#### 4. Ripgrep (Telescope dependency)
+#### Ripgrep (Telescope dependency)
 
-Used by Telescope for project-wide text search.
-
-<Tabs groupId="ripgrep-os">
-  <TabItem value="lin" label="Linux">
-    ``` bash
-    sudo apt install ripgrep
-    ```
-  </TabItem>
-  <TabItem value="mac" label="macOS">
-    ``` bash
-    brew install ripgrep
-    ```
-  </TabItem>
-  <TabItem value="win" label="Windows">
-    ``` bash
-    scoop install ripgrep
-    ```
-    or
-    ``` bash
-    choco install ripgrep
-    ```
-  </TabItem>
-</Tabs>
+Used by Telescope for project-wide text search. See the installation instructions in the [ripgrep official repository](https://github.com/BurntSushi/ripgrep)
 
 ---
 
-#### 5. fd (Telescope dependency)
+#### fd (Telescope dependency)
 
-Used by Telescope for fast file search.
-
-<Tabs groupId="fd-os">
-  <TabItem value="lin" label="Linux">
-    ``` bash
-    sudo apt install fd-find
-    ```
-    :::info
-    If you want create a symlink (Optional)
-
-    ``` bash
-    ln -s $(which fdfind) ~/.local/bin/fd
-    ```
-    :::
-  </TabItem>
-  <TabItem value="mac" label="macOS">
-    ``` bash
-    brew install fd
-    ```
-    :::info
-    If you want create a symlink (Optional)
-
-    ``` bash
-    ln -s $(which fdfind) ~/.local/bin/fd
-    ```
-    :::
-  </TabItem>
-  <TabItem value="win" label="Windows">
-    ``` bash
-    scoop install fd
-    ```
-    or
-    ``` bash
-    choco install fd
-    ```
-  </TabItem>
-</Tabs>
+Used by Telescope for fast file search. See the installation instructions in the [fd official repository](https://github.com/sharkdp/fd)
 
 ---
 
-#### 6. nvim-treesitter (dependencies)
+#### nvim-treesitter (dependencies)
 
-##### 1- Required nvim-treesitter-cli:
+##### 1- Required nvim-treesitter-cli: [instructions](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md)
 
-<Tabs groupId="tree-sitter-cli-pm">
-  <TabItem value="npm" label="npm">
-    ``` bash
-    npm install -g tree-sitter-cli
-    ```
-    And after check it
-    ``` bash
-    tree-sitter --version
-    ```
-  </TabItem>
-  <TabItem value="cargo" label="cargo">
-    ``` bash
-    cargo install --locked tree-sitter-cli
-    ```
-    And after check it
-    ``` bash
-    tree-sitter --version
-    ```
-  </TabItem>
-</Tabs>
-
-##### 2- Required a C compiler:
+##### 2- Required a C compiler: [more info](https://docs.rs/cc/latest/cc/#compile-time-requirements)
 
 <Tabs groupId="c-compiler-os">
   <TabItem value="lin" label="Linux">
@@ -206,7 +133,7 @@ tree-sitter --version
 
 ---
 
-#### 7. Clipboard support
+#### Clipboard support
 
 Neovim requires an external tool to integrate with the system clipboard.
 
