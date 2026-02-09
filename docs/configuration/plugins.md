@@ -102,6 +102,12 @@
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)  
   Shows Git change indicators in the sign column and provides Git actions.
 
+- [diffview.nvim](https://github.com/sindrets/diffview.nvim)  
+  Provides a side-by-side diff view for comparing commits, branches, and working tree changes directly inside Neovim.
+
+- [lazygit](https://github.com/kdheepak/lazygit.nvim)  
+  A fast and intuitive terminal UI for Git, ideal for staging, committing, branching, rebasing, and general Git workflows.
+
 ### Themes
 - [catppuccin](https://github.com/catppuccin/nvim)
 - [gruvbox](https://github.com/ellisonleao/gruvbox.nvim)
