@@ -189,6 +189,14 @@ code,
   background-color: #1e1f32 !important;
 }
 
+.token {
+  color: #193C57 !important;
+}
+
+[data-theme='dark'] .token {
+  color: #ccddee !important;
+}
+
 .alert--info {
   background-color: #ccddee;
 }
