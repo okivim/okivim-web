@@ -25,7 +25,7 @@ export default function App() {
           <SwiperSlide>
             <HomepagePlugin
               title="Make the most of Telescope"
-              description="Use Telescope for searching, buffer management, and advanced LSP options."
+              description="Search files, manage buffers, and access advanced LSP features using Telescope."
               image="/img/screenshots/screenshot-telescope.png"
             />
           </SwiperSlide>
@@ -33,7 +33,7 @@ export default function App() {
           <SwiperSlide>
             <HomepagePlugin
               title="Symbols panel"
-              description="Quickly navigate through symbols, functions, and variables."
+              description="Navigate through symbols, functions, and variables with a dedicated symbols panel."
               image="/img/screenshots/screenshot-symbols-navigate.png"
             />
           </SwiperSlide>
@@ -41,7 +41,7 @@ export default function App() {
           <SwiperSlide>
             <HomepagePlugin
               title="Manage your sessions"
-              description="Save your sessions and restore them anytime with a single action."
+              description="Save, restore, and manage editor sessions to continue your work instantly."
               image="/img/screenshots/screenshot-sessions.png"
             />
           </SwiperSlide>
@@ -49,7 +49,7 @@ export default function App() {
           <SwiperSlide>
             <HomepagePlugin
               title="Built-in notes"
-              description="Take and persist notes directly inside the editor."
+              description="Create, edit, and persist notes directly inside Neovim without external tools."
               image="/img/screenshots/screenshot-notes.png"
             />
           </SwiperSlide>
@@ -57,7 +57,7 @@ export default function App() {
           <SwiperSlide>
             <HomepagePlugin
               title="View all diagnostics"
-              description="See all diagnostics in one place for faster issue tracking."
+              description="Inspect all diagnostics in a single view to track and fix issues faster."
               image="/img/screenshots/screenshot-lsp-diagnostics.png"
             />
           </SwiperSlide>
@@ -65,7 +65,7 @@ export default function App() {
           <SwiperSlide>
             <HomepagePlugin
               title="Keymap helper"
-              description="See available key bindings in real time as you type."
+              description="Discover available key bindings in real time as you type commands."
               image="/img/screenshots/screenshot-keymaps-help.png"
             />
           </SwiperSlide>
@@ -73,7 +73,7 @@ export default function App() {
           <SwiperSlide>
             <HomepagePlugin
               title="Navigate your documents"
-              description="Move quickly through files and jump between matches."
+              description="Move efficiently through files and jump between search results and locations."
               image="/img/screenshots/screenshot-document-navigation.png"
             />
           </SwiperSlide>
@@ -89,7 +89,7 @@ export default function App() {
           <SwiperSlide>
             <HomepagePlugin
               title="Review file changes"
-              description="Inspect diffs to understand exactly what has changed."
+              description="Review and compare file changes to understand differences between commits or branches."
               image="/img/screenshots/screenshot-git2.png"
             />
           </SwiperSlide>
