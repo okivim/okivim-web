@@ -26,6 +26,7 @@ h1:global(.hero__title) {
   justify-content: center;
 }
 
-.textCenter {
+.h2Home {
+  padding: 0 1rem;
   text-align: center;
 }

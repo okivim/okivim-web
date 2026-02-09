@@ -59,7 +59,7 @@ export default function Home(): ReactNode {
         <main>
           <HomepageScreenshot />
           <HomepageFeatures />
-          <h2 className={styles.textCenter}>Designed for your workflow</h2>
+          <h2 className={styles.h2Home}>Designed for your workflow</h2>
           <HomepageCarousel />
         </main>
       </div>

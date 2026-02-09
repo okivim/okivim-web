@@ -1,22 +1,23 @@
 body {
   height: auto;
   background:
-    radial-gradient(
-      circle at 50% 80px,
+    radial-gradient(circle at 50% 80px,
       rgba(var(--ifm-color-primary-rgb), 0.16),
-      transparent 55%
-    ),
-    radial-gradient(
-      circle at 80% 80%,
+      transparent 55%),
+    radial-gradient(circle at 80% 80%,
       rgba(var(--ifm-color-primary-rgb), 0.10),
-      transparent 60%
-    ),
+      transparent 60%),
     var(--ifm-background-color);
   color: var(--ifm-text-color);
   font-family: 'Inter', monospace;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--ifm-featured-text-color);
   font-family: "Outfit", sans-serif;
   font-weight: 700;
@@ -133,8 +134,8 @@ h6 {
   font-size: 18px;
 }
 
-.menu__link > span,
-.menu__link--sublist > span {
+.menu__link>span,
+.menu__link--sublist>span {
   overflow: visible;
 }
 
@@ -149,7 +150,7 @@ h6 {
   color: var(--ifm-color-secondary);
 }
 
-.menu__list-item-collapsible > .menu__link {
+.menu__list-item-collapsible>.menu__link {
   color: var(--ifm-menu-color);
 }
 
@@ -208,6 +209,7 @@ code,
   0% {
     background-position: 0% center;
   }
+
   100% {
     background-position: 200% center;
   }
