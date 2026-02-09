@@ -118,4 +118,5 @@
 
 :::info
 Easy to configure: add your themes in `plugins/colorscheme.lua` and switch the active one by changing the **colorscheme** option.
+Make sure the selected theme has `lazy = false`, while all unused themes should be set to `lazy = true`.
 :::
