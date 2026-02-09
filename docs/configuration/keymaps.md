@@ -97,7 +97,7 @@ These keymaps are available in buffers with LSP enabled.
 | `sr` | Visual | Replace surrounding |
 | `sn` | Visual | Update search range |
 
-### LazyGit
+### Lazygit
 
 | Keymap | Mode | Description |
 |--------|------|-------------|

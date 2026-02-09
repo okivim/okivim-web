@@ -81,8 +81,8 @@ export default function App() {
           <SwiperSlide>
             <HomepagePlugin
               title="Perform Git actions"
-              description="Run common Git commands like commit, stage, or stash changes."
-              image="/img/screenshots/screenshot-git1.png"
+              description="A fast and intuitive terminal UI for Git. Stage, commit, rebase, and manage branches with ease."
+              image="/img/screenshots/screenshot-lazygit.png"
             />
           </SwiperSlide>
 
