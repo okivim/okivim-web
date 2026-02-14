@@ -32,10 +32,10 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<leader>w` | Normal | Split window |
 | `<leader>wv` | Normal | Split window vertically |
 | `<leader>wq` | Normal | Quit a window |
-| `<leader>w>` | Normal | Increase window width +20 |
-| `<leader>w<` | Normal | Decrease window width -20 |
-| `<leader>w+` | Normal | Increase window height +10 |
-| `<leader>w-` | Normal | Decrease window height -10 |
+| `<leader>w>` | Normal | Increase window width +10 |
+| `<leader>w<` | Normal | Decrease window width -10 |
+| `<leader>w+` | Normal | Increase window height +5 |
+| `<leader>w-` | Normal | Decrease window height -5 |
 
 ## Plugin Keymaps
 
