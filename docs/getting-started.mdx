@@ -222,33 +222,30 @@ fnm install --lts
 
 ---
 
-#### Prettierd or Prettier
-
-Required for projects that rely on it.
-
-[prettierd](https://github.com/fsouza/prettierd) is recommended for better performance (*daemon-based*).
-If you prefer, you can use [prettier](https://prettier.io/).
-
-
-<Tabs groupId="formatter">
-  <TabItem value="prettierd" label="Prettierd">
-    ``` bash
-    npm install -g @fsouza/prettierd
-    ```
-  </TabItem>
-  <TabItem value="prettier" label="Prettier">
-    ``` bash
-    npm install -g prettier
-    ```
-  </TabItem>
-</Tabs>
-
----
-
 #### TypeScript
 
 Required for TypeScript language server.
 
 ``` bash
 npm install -g typescript typescript-language-server
+```
+
+---
+
+#### stylelint
+
+Only if you need to work with stylelint.
+
+``` bash
+npm install -g stylelint
+```
+
+---
+
+#### dockerfmt
+
+Only if you want to work with Dockerfiles.
+
+``` bash
+go install github.com/reteps/dockerfmt@latest
 ```
