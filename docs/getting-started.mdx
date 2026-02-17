@@ -30,9 +30,9 @@ import TabItem from '@theme/TabItem';
 
 ### Dependencies
 
-These tools must be installed for the setup to work properly.
+These tools must be installed for the setup to work properly. It is not necessary to install all of them. Install only the ones you need or plan to use.
 
-#### nvim-treesitter
+#### nvim-treesitter (recommended)
 
 ##### 1- Required nvim-treesitter-cli:
 
@@ -86,7 +86,7 @@ tree-sitter --version
 
 ---
 
-#### Clipboard support
+#### Clipboard support (recommended)
 
 Neovim requires an external tool to integrate with the system clipboard.
 
@@ -191,25 +191,25 @@ Neovim requires an external tool to integrate with the system clipboard.
 
 ---
 
-#### ripgrep
+#### ripgrep (recommended)
 
 Used by Telescope for project-wide text search. See the installation instructions in the [ripgrep official repository](https://github.com/BurntSushi/ripgrep)
 
 ---
 
-#### fd
+#### fd (recommended)
 
 Used by Telescope for fast file search. See the installation instructions in the [fd official repository](https://github.com/sharkdp/fd)
 
 ---
 
-#### Lazygit
+#### Lazygit (optional)
 
 Lazygit is optional. Install it only if you want to use the terminal-based Git interface. See the installation instructions in the [Lazygit official repository](https://github.com/jesseduffield/lazygit)
 
 ---
 
-#### Node.js
+#### Node.js (optional)
 
 Required for the TypeScript LSP.
 
@@ -222,7 +222,7 @@ fnm install --lts
 
 ---
 
-#### TypeScript
+#### TypeScript (optional)
 
 Required for TypeScript language server.
 
@@ -232,17 +232,7 @@ npm install -g typescript typescript-language-server
 
 ---
 
-#### rustfmt
-
-Only if you need to work with Rust.
-
-``` bash
-rustup component add rustfmt
-```
-
----
-
-#### stylelint
+#### stylelint (optional)
 
 Only if you need to work with stylelint.
 
@@ -252,7 +242,17 @@ npm install -g stylelint
 
 ---
 
-#### dockerfmt
+#### rustfmt (optional)
+
+Only if you need to work with Rust.
+
+``` bash
+rustup component add rustfmt
+```
+
+---
+
+#### dockerfmt (optional)
 
 Only if you want to work with Dockerfiles. Requires Go to be installed.
 
