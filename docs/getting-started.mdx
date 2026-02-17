@@ -45,13 +45,27 @@ fnm install --lts
 
 ---
 
-#### Prettier
+#### Prettierd or Prettier
 
-Required for projects that use it.
+Required for projects that rely on it.
 
-``` bash
-npm install -g prettier
-```
+`prettierd` is recommended for better performance (*daemon-based*).
+If you prefer, you can use `prettier`.
+
+
+<Tabs groupId="formatter">
+  <TabItem value="prettierd" label="Prettierd">
+    ``` bash
+    npm install -g @fsouza/prettierd
+    ```
+  </TabItem>
+  <TabItem value="prettier" label="Prettier">
+    ``` bash
+    npm install -g prettier
+    ```
+  </TabItem>
+</Tabs>
+
 
 ---
 
