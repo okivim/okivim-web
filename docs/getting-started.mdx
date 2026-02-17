@@ -32,71 +32,6 @@ import TabItem from '@theme/TabItem';
 
 These tools must be installed for the setup to work properly.
 
-#### Node.js
-
-Required for the TypeScript LSP.
-
-Using **fnm** *(Node version manager)*
-https://github.com/Schniz/fnm *(You can use another method to install Node)*
-
-``` bash
-fnm install --lts
-```
-
----
-
-#### Prettierd or Prettier
-
-Required for projects that rely on it.
-
-[prettierd](https://github.com/fsouza/prettierd) is recommended for better performance (*daemon-based*).
-If you prefer, you can use [prettier](https://prettier.io/).
-
-
-<Tabs groupId="formatter">
-  <TabItem value="prettierd" label="Prettierd">
-    ``` bash
-    npm install -g @fsouza/prettierd
-    ```
-  </TabItem>
-  <TabItem value="prettier" label="Prettier">
-    ``` bash
-    npm install -g prettier
-    ```
-  </TabItem>
-</Tabs>
-
-
----
-
-#### TypeScript
-
-Required for TypeScript language server.
-
-``` bash
-npm install -g typescript typescript-language-server
-```
-
----
-
-#### Lazygit
-
-Lazygit is optional. Install it only if you want to use the terminal-based Git interface. See the installation instructions in the [Lazygit official repository](https://github.com/jesseduffield/lazygit)
-
----
-
-#### ripgrep
-
-Used by Telescope for project-wide text search. See the installation instructions in the [ripgrep official repository](https://github.com/BurntSushi/ripgrep)
-
----
-
-#### fd
-
-Used by Telescope for fast file search. See the installation instructions in the [fd official repository](https://github.com/sharkdp/fd)
-
----
-
 #### nvim-treesitter
 
 ##### 1- Required nvim-treesitter-cli:
@@ -253,3 +188,67 @@ Neovim requires an external tool to integrate with the system clipboard.
     </Tabs>
   </TabItem>
 </Tabs>
+
+---
+
+#### ripgrep
+
+Used by Telescope for project-wide text search. See the installation instructions in the [ripgrep official repository](https://github.com/BurntSushi/ripgrep)
+
+---
+
+#### fd
+
+Used by Telescope for fast file search. See the installation instructions in the [fd official repository](https://github.com/sharkdp/fd)
+
+---
+
+#### Lazygit
+
+Lazygit is optional. Install it only if you want to use the terminal-based Git interface. See the installation instructions in the [Lazygit official repository](https://github.com/jesseduffield/lazygit)
+
+---
+
+#### Node.js
+
+Required for the TypeScript LSP.
+
+Using **fnm** *(Node version manager)*
+https://github.com/Schniz/fnm *(You can use another method to install Node)*
+
+``` bash
+fnm install --lts
+```
+
+---
+
+#### Prettierd or Prettier
+
+Required for projects that rely on it.
+
+[prettierd](https://github.com/fsouza/prettierd) is recommended for better performance (*daemon-based*).
+If you prefer, you can use [prettier](https://prettier.io/).
+
+
+<Tabs groupId="formatter">
+  <TabItem value="prettierd" label="Prettierd">
+    ``` bash
+    npm install -g @fsouza/prettierd
+    ```
+  </TabItem>
+  <TabItem value="prettier" label="Prettier">
+    ``` bash
+    npm install -g prettier
+    ```
+  </TabItem>
+</Tabs>
+
+---
+
+#### TypeScript
+
+Required for TypeScript language server.
+
+``` bash
+npm install -g typescript typescript-language-server
+```
