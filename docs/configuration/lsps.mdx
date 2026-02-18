@@ -98,14 +98,144 @@ The Debug Adapter Protocol (DAP) configurations are defined in `lua/okivim/plugi
 
 ## Formatters
 
-- prettierd & prettier
-- stylelint
-- dockerfmt
-- pint
-- black
-- rustfmt
-- shfmt
-- taplo
+Okivim uses **Conform** for formatting.
+
+### Philosophy
+
+Okivim does **not** automatically install formatters for you.
+
+Instead:
+
+-   Install the formatter you want (via Mason if available, or
+    manually).
+-   If the formatter is already listed in `formatters_by_ft`, it will
+    start working automatically.
+-   If it is not listed, simply add it to the `formatters_by_ft` table
+    in `conform.lua`.
+
+This keeps the system simple, predictable, and easy to extend.
+
+------------------------------------------------------------------------
+
+### Default Included Formatters
+
+The formatters defined by default in `conform.lua` are only related to
+the LSP servers that are supported by default in this distribution.
+
+They are included for convenience and consistency with the supported
+languages, but they are **not automatically installed**.
+
+You are still responsible for installing the formatter binary yourself.
+
+------------------------------------------------------------------------
+
+### How It Works
+
+Each language has one or more formatters defined in:
+
+``` lua
+formatters_by_ft = {
+  javascript = { "prettierd", "prettier" },
+  python = { "black" },
+  php = { "pint" },
+  -- etc.
+}
+```
+
+If the formatter binary exists in your system, Conform will use it.
+
+If it does not exist, Conform will fall back to LSP formatting (because
+`lsp_fallback = true` is enabled).
+
+This means:
+
+-   Nothing crashes.
+-   Formatting still works if the LSP supports it.
+-   You can decide which formatter to use by installing it.
+
+------------------------------------------------------------------------
+
+### Installing a Formatter
+
+You can install formatters in two ways:
+
+#### 1. Using Mason (if available)
+
+`:Mason`
+
+Search for the formatter and install it.
+
+#### 2. Installing Manually
+
+Some formatters belong to the language ecosystem and should be installed
+manually.
+
+Examples:
+
+##### Python
+
+`pipx install black`
+
+##### Rust
+
+`rustup component add rustfmt`
+
+##### Node-based tools (Prettier, Prettierd, Stylelint)
+
+Make sure you have:
+
+- `node`
+- `npm`
+
+Then install globally or via Mason.
+
+------------------------------------------------------------------------
+
+### How to Verify Which Formatter Is Being Used
+
+To check the active formatter for the current buffer:
+
+`:ConformInfo`
+
+⚠️ Do not rely on `:LspInfo` to verify external formatters.\
+`:LspInfo` only shows LSP servers.
+
+If formatting works but does not respect your configuration
+(e.g. `.prettierrc`), you are likely seeing LSP fallback instead of the
+external formatter.
+
+------------------------------------------------------------------------
+
+### Adding a New Formatter
+
+To add a formatter for a new language:
+
+``` lua
+formatters_by_ft = {
+  ...
+  java = { "google-java-format" },
+}
+```
+
+Make sure:
+
+- The filetype matches Neovim's filetype name.
+- The formatter binary exists in your system.
+
+To check the filetype of the current buffer:
+
+`:set filetype?`
+
+------------------------------------------------------------------------
+
+### Summary
+
+-   Okivim configures formatters but does not manage toolchains.
+-   Default formatters match the LSPs supported by this distribution.
+-   Install the formatter you want.
+-   If it is listed, it works automatically.
+-   If not, add it to `formatters_by_ft`.
+-   Use `:ConformInfo` to verify the active formatter.
 
 :::info
 Formatter configurations are defined in `lua/okivim/plugins/conform.lua`
