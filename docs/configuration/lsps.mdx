@@ -98,26 +98,7 @@ The Debug Adapter Protocol (DAP) configurations are defined in `lua/okivim/plugi
 
 ## Formatters
 
-Okivim uses **Conform** for formatting.
-
-### Philosophy
-
 Okivim does **not** automatically install formatters for you.
-
-Instead:
-
--   Install the formatter you want (via Mason if available, or
-    manually).
--   If the formatter is already listed in `formatters_by_ft`, it will
-    start working automatically.
--   If it is not listed, simply add it to the `formatters_by_ft` table
-    in `conform.lua`.
-
-This keeps the system simple, predictable, and easy to extend.
-
-------------------------------------------------------------------------
-
-### Default Included Formatters
 
 The formatters defined by default in `conform.lua` are only related to
 the LSP servers that are supported by default in this distribution.
@@ -127,33 +108,19 @@ languages, but they are **not automatically installed**.
 
 You are still responsible for installing the formatter binary yourself.
 
-------------------------------------------------------------------------
-
-### How It Works
-
-Each language has one or more formatters defined in:
-
-``` lua
-formatters_by_ft = {
-  javascript = { "prettierd", "prettier" },
-  python = { "black" },
-  php = { "pint" },
-  -- etc.
-}
-```
+-   Install the formatter you want (via Mason if available, or
+    manually).
+-   If the formatter is already listed in `formatters_by_ft`, it will
+    start working automatically.
+-   If it is not listed, simply add it to the `formatters_by_ft` table
+    in `conform.lua`.
 
 If the formatter binary exists in your system, Conform will use it.
 
 If it does not exist, Conform will fall back to LSP formatting (because
 `lsp_fallback = true` is enabled).
 
-This means:
-
--   Nothing crashes.
--   Formatting still works if the LSP supports it.
--   You can decide which formatter to use by installing it.
-
-------------------------------------------------------------------------
+---
 
 ### Installing a Formatter
 
@@ -189,22 +156,7 @@ Make sure you have:
 
 Then install globally or via Mason.
 
-------------------------------------------------------------------------
-
-### How to Verify Which Formatter Is Being Used
-
-To check the active formatter for the current buffer:
-
-`:ConformInfo`
-
-⚠️ Do not rely on `:LspInfo` to verify external formatters.\
-`:LspInfo` only shows LSP servers.
-
-If formatting works but does not respect your configuration
-(e.g. `.prettierrc`), you are likely seeing LSP fallback instead of the
-external formatter.
-
-------------------------------------------------------------------------
+---
 
 ### Adding a New Formatter
 
@@ -226,9 +178,9 @@ To check the filetype of the current buffer:
 
 `:set filetype?`
 
-------------------------------------------------------------------------
+---
 
-### Summary
+**Summary**
 
 -   Okivim configures formatters but does not manage toolchains.
 -   Default formatters match the LSPs supported by this distribution.
@@ -239,4 +191,7 @@ To check the filetype of the current buffer:
 
 :::info
 Formatter configurations are defined in `lua/okivim/plugins/conform.lua`
+
+To check the active formatter for the current buffer:
+`:ConformInfo`
 :::
