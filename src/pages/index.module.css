@@ -11,7 +11,7 @@
 }
 
 h1:global(.hero__title) {
-  font-family: 'Ranade';
+  font-family: "Ranade";
 }
 
 @media screen and (max-width: 996px) {
