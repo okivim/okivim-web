@@ -89,6 +89,16 @@ These keymaps are available in buffers with LSP enabled.
 | `-` | Normal | Open parent directory |
 | `g.` | Normal | Toggle hidden files and directories |
 
+### Flash
+
+| Keymap | Mode | Description |
+|--------|------|-------------|
+| `zk` | Normal/Visual/Operator | Flash jump |
+| `Zk` | Normal/Visual/Operator | Flash Treesitter |
+| `r` | Operator | Remote flash |
+| `R` | Operator/Visual | Treesitter search |
+| `<C-s>` | Command | Toggle flash search |
+
 ### Mini Surround
 
 | Keymap | Mode | Description |
@@ -100,6 +110,14 @@ These keymaps are available in buffers with LSP enabled.
 | `sh` | Visual | Highlight surrounding |
 | `sr` | Visual | Replace surrounding |
 | `sn` | Visual | Update search range |
+
+### TreeSJ
+
+| Keymap | Mode | Description |
+|--------|------|-------------|
+| `<leader>j` | Normal | Combine several lines into one |
+| `<leader>s` | Normal | Separate into several lines |
+| `<leader>m` | Normal | Toggle between split ↔ join |
 
 ### Lazygit
 
@@ -140,6 +158,17 @@ These keymaps are available in buffers with LSP enabled.
 |--------|------|-------------|
 | `<leader>sls` | Normal | Show sessions panel |
 
+### Trouble
+
+| Keymap | Mode | Description |
+|--------|------|-------------|
+| `<leader>xx` | Normal | Toggle diagnostics |
+| `<leader>xX` | Normal | Toggle buffer diagnostics |
+| `<leader>cs` | Normal | Toggle symbols |
+| `<leader>cl` | Normal | Toggle LSP list |
+| `<leader>xQ` | Normal | Toggle quickfix list |
+| `<leader>xL` | Normal | Toggle location list |
+
 ### DAP (Debug Adapter Protocol)
 
 | Keymap | Mode | Description |
@@ -152,27 +181,6 @@ These keymaps are available in buffers with LSP enabled.
 | `<leader>dB` | Normal | Set conditional breakpoint |
 | `<leader>dr` | Normal | Open REPL |
 | `<leader>dl` | Normal | Run last debug session |
-
-### Flash
-
-| Keymap | Mode | Description |
-|--------|------|-------------|
-| `zk` | Normal/Visual/Operator | Flash jump |
-| `Zk` | Normal/Visual/Operator | Flash Treesitter |
-| `r` | Operator | Remote flash |
-| `R` | Operator/Visual | Treesitter search |
-| `<C-s>` | Command | Toggle flash search |
-
-### Trouble
-
-| Keymap | Mode | Description |
-|--------|------|-------------|
-| `<leader>xx` | Normal | Toggle diagnostics |
-| `<leader>xX` | Normal | Toggle buffer diagnostics |
-| `<leader>cs` | Normal | Toggle symbols |
-| `<leader>cl` | Normal | Toggle LSP list |
-| `<leader>xQ` | Normal | Toggle quickfix list |
-| `<leader>xL` | Normal | Toggle location list |
 
 ---
 
