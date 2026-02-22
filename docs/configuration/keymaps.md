@@ -18,6 +18,7 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<leader>a` | Normal | Select entire file |
 | `<leader>y` | Visual | Copy selection |
 | `<leader>yy` | Normal | Copy line |
+| `<leader>;` | Normal | Add a semicolon (;) to the end of the line |
 | `<leader>d` | Normal/Visual | Delete (keep clipboard) |
 | `<` | Visual | Indent left (keep selection) |
 | `>` | Visual | Indent right (keep selection) |
