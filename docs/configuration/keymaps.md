@@ -31,10 +31,10 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<C-j>` | Normal | Go to the down window |
 | `<C-k>` | Normal | Go to the up window |
 | `<C-l>` | Normal | Go to the right window |
-| `<C-Up>` | Normal | Increase window height +5 |
-| `<C-Down>` | Normal | Decrease window height -5 |
-| `<C-Left>` | Normal | Increase window width +10 |
-| `<C-Right>` | Normal | Decrease window width -10 |
+| `<C-Up>` | Normal | Increase window height |
+| `<C-Down>` | Normal | Decrease window height |
+| `<C-Left>` | Normal | Decrease window width |
+| `<C-Right>` | Normal | Increase window width |
 | `<leader>w` | Normal | Split window |
 | `<leader>wv` | Normal | Split window vertically |
 | `<leader>wq` | Normal | Quit a window |
