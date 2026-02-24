@@ -11,32 +11,35 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<Tab>` | Normal | Next buffer |
 | `<S-Tab>` | Normal | Previous buffer |
 | `<leader>bq` | Normal | Close other buffers |
+| `<leader>bl` | Normal | Buffer list |
+| `<leader>bx` | Normal | Close buffer |
 | `<leader>alb` | Normal | Insert empty line below |
 | `<leader>sl` | Normal | Select line *(no newline)* |
 | `<leader>yl` | Normal | Copy line *(no newline)* |
-| `<leader>bx` | Normal | Close buffer |
 | `<leader>a` | Normal | Select entire file |
-| `<leader>y` | Visual | Copy selection |
-| `<leader>yy` | Normal | Copy line |
-| `<leader>;` | Normal | Add a semicolon (;) to the end of the line |
 | `<leader>d` | Normal/Visual | Delete (keep clipboard) |
-| `<` | Visual | Indent left (keep selection) |
-| `>` | Visual | Indent right (keep selection) |
+| `<leader>;` | Normal | Add a semicolon (;) to the end of the line |
 | `<leader>dy` | Normal | Show diagnostics |
 | `<leader>f` | Normal | Search forward |
-| `<leader>t` | Normal | Split terminal |
-| `<leader>tv` | Normal | Split terminal vertically |
+| `<` | Visual | Indent left (keep selection) |
+| `>` | Visual | Indent right (keep selection) |
+| `<A-j>` | Normal | Move line down |
+| `<A-k>` | Normal | Move line up |
+| `<A-j>` | Visual | Move selection down |
+| `<A-k>` | Visual | Move selection up |
 | `<C-h>` | Normal | Go to the left window |
 | `<C-j>` | Normal | Go to the down window |
 | `<C-k>` | Normal | Go to the up window |
 | `<C-l>` | Normal | Go to the right window |
+| `<C-Up>` | Normal | Increase window height +5 |
+| `<C-Down>` | Normal | Decrease window height -5 |
+| `<C-Left>` | Normal | Increase window width +10 |
+| `<C-Right>` | Normal | Decrease window width -10 |
 | `<leader>w` | Normal | Split window |
 | `<leader>wv` | Normal | Split window vertically |
 | `<leader>wq` | Normal | Quit a window |
-| `<leader>w>` | Normal | Increase window width +10 |
-| `<leader>w<` | Normal | Decrease window width -10 |
-| `<leader>w+` | Normal | Increase window height +5 |
-| `<leader>w-` | Normal | Decrease window height -5 |
+| `<leader>t` | Normal | Split terminal |
+| `<leader>tv` | Normal | Split terminal vertically |
 
 ## Plugin Keymaps
 
