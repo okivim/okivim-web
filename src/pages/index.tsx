@@ -6,6 +6,7 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import HomepageScreenshot from "@site/src/components/HomepageScreenshot";
 import HomepageCarousel from "@site/src/components/HomepageCarousel";
+import HomepageMasthead from "@site/src/components/HomepageMasthead/index.mdx";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -55,6 +56,12 @@ export default function Home(): ReactNode {
       description="Minimal, elegant and efficient Neovim configuration."
     >
       <div className={styles.homeBackground}>
+        <HomepageMasthead
+          title={siteConfig.title}
+          subtitle={siteConfig.tagline}
+          ctaLabel="Getting started"
+          ctaHref="/docs/getting-started"
+        />
         <HomepageHeader />
         <main>
           <HomepageScreenshot />

@@ -1,0 +1,16 @@
+import styles from "./styles.module.css";
+
+export default function FloatingLines() {
+  const lines = [...Array(12).keys()];
+  return (
+    <div className={styles.floatingLines} aria-hidden="true">
+      {lines.map((_, index) => (
+        <span
+          key={`line-${index}`}
+          className={styles.floatingLine}
+          style={{ "--i": index }}
+        />
+      ))}
+    </div>
+  );
+}

@@ -1,0 +1,44 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import styles from "./styles.module.css";
+
+export default function MastheadSlider() {
+  const slides = [
+    "/img/screenshot.png",
+    "/img/screenshot.png",
+    "/img/screenshot.png",
+    "/img/screenshot.png",
+  ];
+  return (
+    <div className={styles.slider}>
+      <Swiper
+        modules={[Autoplay]}
+        loop={true}
+        autoplay={{
+          delay: 4200,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        slidesPerView={1}
+        spaceBetween={0}
+        className={styles.sliderSwiper}
+      >
+        {slides.map((image, index) => (
+          <SwiperSlide key={`${image}-${index}`}>
+            <div className={styles.slideFrame}>
+              <div className={styles.slideGlow} />
+              <div className={styles.slideMedia}>
+                <img
+                  src={image}
+                  alt="Okivim screenshot"
+                  className={styles.slideImage}
+                />
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+}
