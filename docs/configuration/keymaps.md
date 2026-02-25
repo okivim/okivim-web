@@ -86,6 +86,18 @@ These keymaps are available in buffers with LSP enabled.
 |--------|------|-------------|
 | `<leader>h` | Normal | Yank history |
 
+### Aerial
+
+| Keymap | Mode | Description |
+|--------|------|-------------|
+| `<leader>o` | Normal | Toggle outline |
+
+### NvimTree
+
+| Keymap | Mode | Description |
+|--------|------|-------------|
+| `<leader>-` | Normal | Toggle explorer |
+
 ### Oil
 
 | Keymap | Mode | Description |
