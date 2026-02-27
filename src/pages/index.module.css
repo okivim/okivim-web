@@ -26,6 +26,31 @@ h1:global(.hero__title) {
   justify-content: center;
 }
 
+.sparkleButton {
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.sparkleLabel {
+  position: relative;
+  z-index: 2;
+}
+
+.sparkleIcon {
+  position: relative;
+  z-index: 2;
+}
+
+.sparkleParticle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 1;
+  box-shadow: 0 0 12px currentColor;
+}
+
 .h2Home {
   padding: 0 1rem;
   text-align: center;
