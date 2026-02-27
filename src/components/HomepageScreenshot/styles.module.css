@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   padding: 0 1rem;
+  perspective: 800px;
 }
 
 .screenshotWrapperNavbar {
@@ -39,4 +40,6 @@
   width: 100%;
   max-width: 1170px;
   border-radius: 0 0 12px 12px;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
