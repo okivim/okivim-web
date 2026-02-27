@@ -23,6 +23,10 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<leader>f` | Normal | Search forward |
 | `<` | Visual | Indent left (keep selection) |
 | `>` | Visual | Indent right (keep selection) |
+| `<C-h>` | Insert | Move cursor one character to the left in insert mode |
+| `<C-j>` | Insert | Move cursor one character down in insert mode |
+| `<C-k>` | Insert | Move cursor one character up in insert mode |
+| `<C-l>` | Insert | Move cursor one character to the right in insert mode |
 | `<A-j>` | Normal | Move line down |
 | `<A-k>` | Normal | Move line up |
 | `<A-j>` | Visual | Move selection down |
