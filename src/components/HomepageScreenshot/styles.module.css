@@ -24,19 +24,19 @@
 }
 
 .redBtn {
-  background-color: #FF5F57;
+  background-color: #ff5f57;
 }
 
 .yellowBtn {
-  background-color: #FEBC2E;
+  background-color: #febc2e;
 }
 
 .greenBtn {
-  background-color: #28C840;
+  background-color: #28c840;
 }
 
 .screenshot {
   width: 100%;
   max-width: 1170px;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 12px 12px;
 }
