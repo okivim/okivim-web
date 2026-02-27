@@ -4,20 +4,20 @@ import styles from "./styles.module.css";
 
 export default function HomepageScreenshot() {
   const screenshotWrapperRef = useRef<HTMLElement>(null);
-  const screenshotRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
-    if (!screenshotWrapperRef.current || !screenshotRef.current) {
+    if (!screenshotWrapperRef.current) {
       return;
     }
 
     const wrapper = screenshotWrapperRef.current;
-    const screenshot = screenshotRef.current;
 
-    const rotateXTo = gsap.quickTo(screenshot, "rotationX", { ease: "power3" });
-    const rotateYTo = gsap.quickTo(screenshot, "rotationY", { ease: "power3" });
-    const xTo = gsap.quickTo(screenshot, "x", { ease: "power3" });
-    const yTo = gsap.quickTo(screenshot, "y", { ease: "power3" });
+    gsap.set(wrapper, { transformPerspective: 800 });
+
+    const rotateXTo = gsap.quickTo(wrapper, "rotationX", { ease: "power3" });
+    const rotateYTo = gsap.quickTo(wrapper, "rotationY", { ease: "power3" });
+    const xTo = gsap.quickTo(wrapper, "x", { ease: "power3" });
+    const yTo = gsap.quickTo(wrapper, "y", { ease: "power3" });
 
     const handlePointerMove = (event: PointerEvent) => {
       const { left, top, width, height } = wrapper.getBoundingClientRect();
@@ -56,7 +56,6 @@ export default function HomepageScreenshot() {
       <img
         src="./img/screenshot.png"
         className={styles.screenshot}
-        ref={screenshotRef}
         alt="okivim screenshot"
       />
     </section>
