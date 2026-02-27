@@ -3,13 +3,15 @@ import { gsap } from "gsap";
 import styles from "./styles.module.css";
 
 export default function HomepageScreenshot() {
-  const screenshotWrapperRef = useRef<HTMLElement>(null);
+  const screenshotSceneRef = useRef<HTMLElement>(null);
+  const screenshotWrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!screenshotWrapperRef.current) {
+    if (!screenshotSceneRef.current || !screenshotWrapperRef.current) {
       return;
     }
 
+    const scene = screenshotSceneRef.current;
     const wrapper = screenshotWrapperRef.current;
 
     gsap.set(wrapper, { transformPerspective: 800 });
@@ -20,7 +22,7 @@ export default function HomepageScreenshot() {
     const yTo = gsap.quickTo(wrapper, "y", { ease: "power3" });
 
     const handlePointerMove = (event: PointerEvent) => {
-      const { left, top, width, height } = wrapper.getBoundingClientRect();
+      const { left, top, width, height } = scene.getBoundingClientRect();
       const normalizedX = (event.clientX - left) / width;
       const normalizedY = (event.clientY - top) / height;
 
@@ -37,27 +39,29 @@ export default function HomepageScreenshot() {
       yTo(0);
     };
 
-    wrapper.addEventListener("pointermove", handlePointerMove);
-    wrapper.addEventListener("pointerleave", handlePointerLeave);
+    scene.addEventListener("pointermove", handlePointerMove);
+    scene.addEventListener("pointerleave", handlePointerLeave);
 
     return () => {
-      wrapper.removeEventListener("pointermove", handlePointerMove);
-      wrapper.removeEventListener("pointerleave", handlePointerLeave);
+      scene.removeEventListener("pointermove", handlePointerMove);
+      scene.removeEventListener("pointerleave", handlePointerLeave);
     };
   }, []);
 
   return (
-    <section className={styles.screenshotWrapper} ref={screenshotWrapperRef}>
-      <div className={styles.screenshotWrapperNavbar}>
-        <span className={`${styles.cBtn} ${styles.redBtn}`}></span>
-        <span className={`${styles.cBtn} ${styles.yellowBtn}`}></span>
-        <span className={`${styles.cBtn} ${styles.greenBtn}`}></span>
+    <section className={styles.screenshotScene} ref={screenshotSceneRef}>
+      <div className={styles.screenshotWrapper} ref={screenshotWrapperRef}>
+        <div className={styles.screenshotWrapperNavbar}>
+          <span className={`${styles.cBtn} ${styles.redBtn}`}></span>
+          <span className={`${styles.cBtn} ${styles.yellowBtn}`}></span>
+          <span className={`${styles.cBtn} ${styles.greenBtn}`}></span>
+        </div>
+        <img
+          src="./img/screenshot.png"
+          className={styles.screenshot}
+          alt="okivim screenshot"
+        />
       </div>
-      <img
-        src="./img/screenshot.png"
-        className={styles.screenshot}
-        alt="okivim screenshot"
-      />
     </section>
   );
 }
