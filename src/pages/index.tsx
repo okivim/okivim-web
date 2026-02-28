@@ -33,8 +33,6 @@ function HomepageHeader() {
       const rect = button.getBoundingClientRect();
       const localX = event.clientX - rect.left;
       const localY = event.clientY - rect.top;
-      const nx = localX / rect.width;
-      const ny = localY / rect.height;
 
       gsap.to(glow, {
         x: localX - 90,
