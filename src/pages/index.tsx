@@ -14,84 +14,64 @@ import styles from "./index.module.css";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
-  const ctaWrapRef = useRef<HTMLDivElement>(null);
+  const ctaButtonRef = useRef<HTMLAnchorElement>(null);
+  const ctaGlowRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    const ctaLink = ctaWrapRef.current?.querySelector("a");
-    if (!ctaLink) {
+    if (!ctaButtonRef.current || !ctaGlowRef.current) {
       return;
     }
 
-    const colors = ["#ffffff", "#cffafe", "#a5f3fc", "#99f6e4"];
-    let lastMove = 0;
+    const button = ctaButtonRef.current;
+    const glow = ctaGlowRef.current;
 
-    const spawnSparkle = (x: number, y: number, burst = false) => {
-      const sparkle = document.createElement("span");
-      sparkle.className = styles.sparkleParticle;
-      sparkle.style.left = `${x}px`;
-      sparkle.style.top = `${y}px`;
-      const color = colors[Math.floor(Math.random() * colors.length)];
-      sparkle.style.backgroundColor = color;
-      sparkle.style.color = color;
-      ctaLink.appendChild(sparkle);
+    const onPointerEnter = () => {
+      gsap.to(glow, { opacity: 1, duration: 0.2, ease: "power2.out" });
+    };
 
-      const distance = burst ? gsap.utils.random(20, 48) : gsap.utils.random(10, 26);
-      const angle = gsap.utils.random(0, Math.PI * 2);
-      const dx = Math.cos(angle) * distance;
-      const dy = Math.sin(angle) * distance;
+    const onPointerMove = (event: PointerEvent) => {
+      const rect = button.getBoundingClientRect();
+      const localX = event.clientX - rect.left;
+      const localY = event.clientY - rect.top;
+      const nx = localX / rect.width;
+      const ny = localY / rect.height;
 
+      gsap.to(glow, {
+        x: localX - 90,
+        y: localY - 90,
+        duration: 0.18,
+        ease: "power3.out",
+      });
+    };
+
+    const onPointerLeave = () => {
+      gsap.to(glow, { opacity: 0, duration: 0.24, ease: "power2.out" });
+    };
+
+    const onClick = () => {
       gsap.fromTo(
-        sparkle,
-        { x: 0, y: 0, opacity: 0, scale: 0.2 },
+        button,
+        { boxShadow: "0 0 0 rgba(185, 255, 245, 0)" },
         {
-          x: dx,
-          y: dy,
-          opacity: 1,
-          scale: gsap.utils.random(0.8, 1.6),
-          duration: 0.15,
+          boxShadow: "0 0 0 8px rgba(185, 255, 245, 0.35)",
+          duration: 0.12,
           ease: "power1.out",
           yoyo: true,
           repeat: 1,
-          onComplete: () => sparkle.remove(),
         },
       );
     };
 
-    const spawnBurst = (x: number, y: number) => {
-      for (let i = 0; i < 12; i += 1) {
-        spawnSparkle(x, y, true);
-      }
-    };
-
-    const onPointerEnter = () => {
-      const rect = ctaLink.getBoundingClientRect();
-      spawnBurst(rect.width * 0.5, rect.height * 0.5);
-    };
-
-    const onPointerMove = (event: PointerEvent) => {
-      const now = performance.now();
-      if (now - lastMove < 60) {
-        return;
-      }
-
-      lastMove = now;
-      const rect = ctaLink.getBoundingClientRect();
-      spawnSparkle(event.clientX - rect.left, event.clientY - rect.top);
-    };
-
-    const onClick = (event: MouseEvent) => {
-      const rect = ctaLink.getBoundingClientRect();
-      spawnBurst(event.clientX - rect.left, event.clientY - rect.top);
-    };
-
-    ctaLink.addEventListener("pointerenter", onPointerEnter);
-    ctaLink.addEventListener("pointermove", onPointerMove);
-    ctaLink.addEventListener("click", onClick);
+    button.addEventListener("pointerenter", onPointerEnter);
+    button.addEventListener("pointermove", onPointerMove);
+    button.addEventListener("pointerleave", onPointerLeave);
+    button.addEventListener("click", onClick);
 
     return () => {
-      ctaLink.removeEventListener("pointerenter", onPointerEnter);
-      ctaLink.removeEventListener("pointermove", onPointerMove);
-      ctaLink.removeEventListener("click", onClick);
+      button.removeEventListener("pointerenter", onPointerEnter);
+      button.removeEventListener("pointermove", onPointerMove);
+      button.removeEventListener("pointerleave", onPointerLeave);
+      button.removeEventListener("click", onClick);
     };
   }, []);
 
@@ -102,15 +82,14 @@ function HomepageHeader() {
           okivim
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons} ref={ctaWrapRef}>
+        <div className={styles.buttons}>
           <Link
-            className={clsx(
-              "button button--secondary button--lg",
-              styles.sparkleButton,
-            )}
+            className={clsx("button button--secondary button--lg", styles.ctaButton)}
             to="/docs/getting-started"
+            ref={ctaButtonRef}
           >
-            <span className={styles.sparkleLabel}>Getting started</span>
+            <span className={styles.ctaGlow} ref={ctaGlowRef} aria-hidden="true" />
+            <span className={styles.ctaText}>Getting started</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -123,7 +102,7 @@ function HomepageHeader() {
               strokeLinejoin="round"
               className={clsx(
                 "lucide lucide-arrow-right-icon lucide-arrow-right",
-                styles.sparkleIcon,
+                styles.ctaIcon,
               )}
             >
               <path d="M5 12h14" />
