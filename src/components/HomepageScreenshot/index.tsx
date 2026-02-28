@@ -26,10 +26,10 @@ export default function HomepageScreenshot() {
       const normalizedX = (event.clientX - left) / width;
       const normalizedY = (event.clientY - top) / height;
 
-      rotateXTo(gsap.utils.interpolate(7.5, -7.5, normalizedY));
-      rotateYTo(gsap.utils.interpolate(-7.5, 7.5, normalizedX));
-      xTo(gsap.utils.interpolate(-7, 7, normalizedX));
-      yTo(gsap.utils.interpolate(-7, 7, normalizedY));
+      rotateXTo(gsap.utils.interpolate(5.625, -5.625, normalizedY));
+      rotateYTo(gsap.utils.interpolate(-5.625, 5.625, normalizedX));
+      xTo(gsap.utils.interpolate(-5.25, 5.25, normalizedX));
+      yTo(gsap.utils.interpolate(-5.25, 5.25, normalizedY));
     };
 
     const handlePointerLeave = () => {
