@@ -26,6 +26,40 @@ h1:global(.hero__title) {
   justify-content: center;
 }
 
+.ctaButton {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ctaText {
+  position: relative;
+  z-index: 2;
+}
+
+.ctaIcon {
+  position: relative;
+  z-index: 2;
+}
+
+.ctaGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+  background: radial-gradient(
+    circle,
+    rgba(185, 255, 245, 0.22) 0%,
+    rgba(185, 255, 245, 0.05) 38%,
+    rgba(185, 255, 245, 0) 70%
+  );
+}
+
 .h2Home {
   padding: 0 1rem;
   text-align: center;
