@@ -93,7 +93,8 @@ By doing this, the LSP will be registered in the list of servers that are automa
 - php-debug-adapter (PHP)
 
 :::info
-The Debug Adapter Protocol (DAP) configurations are defined in `lua/okivim/plugins/dap.lua`
+The Debug Adapter Protocol (DAP) configurations are defined in `lua/okivim/plugins/dap.lua`.
+To use a DAP adapter, uncomment its corresponding block and install it with `:MasonInstall <adapter-name>` before running the debugger.
 :::
 
 ## Formatters
@@ -190,8 +191,6 @@ To check the filetype of the current buffer:
 -   Use `:ConformInfo` to verify the active formatter.
 
 :::info
-Formatter configurations are defined in `lua/okivim/plugins/conform.lua`
-
-To check the active formatter for the current buffer:
-`:ConformInfo`
+Formatter configurations are defined in `lua/okivim/plugins/conform.lua`.
+To check the active formatter for the current buffer: `:ConformInfo`
 :::
